@@ -1,0 +1,29 @@
+the cal() fucntion allows us to do addition multiplication and devicion in an length unit togther wiht each other in order to get  an output result
+Example: calc(100px + 200px) // this is 300 px 
+
+we can also nest tese with each other calc(400px - calc(100px + 200px)). this 100px
+
+one think to know about calc is that you can conbiend difernten units
+Example: px rem fr
+calc(100% - 30px)
+this is where the magic of calc() comes in the ability to combine different units with each other
+
+This allows you to use margin with out using margin.
+noq we can use margin to center things 
+ width: calc(100% - 30px);
+  margin: 0 auto;
+  this will take 30pxs and split them in both sides
+
+  Where clac really shines is is when you start using css variables
+  --width: 100px
+  width: calc(var(--width ) * 2);
+  200px with
+
+  one instent where this is very useful is when using colors.
+  for example if we are working with colors in this case hsl(hue, saturation lightness)
+  if we set a varibale for hue in root: --hue:180
+we can use the calc to get oppiset colors 
+background:hsl(var(--hue),100%,50%) light blue
+background:hsl(ca(var(--hue)-180), 100%, 50%) red. oppiset of light blue
+
+we can change the hue and we will always get complemtery colors

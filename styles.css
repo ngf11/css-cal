@@ -1,2 +1,22 @@
-/* .box {
-} */
+body {
+  margin: 0;
+  background-color: rgb(70, 69, 69);
+}
+.box {
+  background-color: red;
+  height: 100px;
+  /* width: 300px; */
+  /* width: calc(100px + 200px); */
+  /* width: calc(400px - calc(100px + 200px)); */
+  /* width: calc(100% - 30px); */
+  width: calc(var(--width) * 2);
+  margin: 0 auto;
+}
+
+.prime {
+  background-color: hsl(180, 100%, 50%);
+}
+
+.danger {
+  background-color: hsl(0, 100%, 50%);
+}
